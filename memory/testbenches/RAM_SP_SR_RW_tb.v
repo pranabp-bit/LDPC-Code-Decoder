@@ -21,7 +21,7 @@ module tb;
     $dumpfile("dump.vcd");
     $dumpvars(1, tb);
     {clk, cs, we, address, tb_data} <= 0;
-    repeat (2) @ (posedge clk);begin
+    repeat (2) @ (posedge clk) begin
     for (int i = 0; i < (1<<ADDR_WIDTH); i= i+1) begin
       repeat (1) @(posedge clk) begin address <= i; we <= 1; cs <=1; tb_data <= $random %8;
       end
