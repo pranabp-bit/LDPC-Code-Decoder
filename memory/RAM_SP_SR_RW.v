@@ -31,7 +31,7 @@ module RAM_SP_SR_RW (clk, address,
 
   // Read data from memory
   always @(posedge clk) begin
-    if(!we & cs) begin
+    if(!we & cs ) begin
     data_out <= memory[address];
     end
   end
