@@ -11,9 +11,9 @@ module test;
   reg [4:0]  temp[0:1][0:255];
    
   // Instantiate design under test
-  // D_WIDTH = 8
-  // A_WIDTH = 5
-  // A_MAX = 2^A_WIDTH = 32
+  // DATA_WIDTH = 5
+  // ADDRESS_WIDTH = 8
+  // RAM_DEPTH = 2^A_WIDTH = 256
   INT_RAM #(5, 8, 256) RAM (
     .clk(clk),
     .address(address),
