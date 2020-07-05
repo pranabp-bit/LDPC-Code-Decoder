@@ -1,4 +1,4 @@
-module up_counter(clk, rstn, en, out);
+module UP_COUNTER(clk, rstn, en, out);
   
     parameter DATA_WIDTH = 8;
     parameter COUNT_FROM=0;
