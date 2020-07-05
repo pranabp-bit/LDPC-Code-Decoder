@@ -1,16 +1,17 @@
-module up_counter(clk, rstn, out);
+module up_counter(clk, rstn, en, out);
   
     parameter DATA_WIDTH = 8;
     parameter COUNT_FROM=0;
   
     input clk;               
-    input rstn;             
+    input rstn; 
+    input en;
     output reg[DATA_WIDTH-1:0] out;   
   
   
   
   
-  always @ (posedge clk) begin
+  always @ (posedge clk && en) begin
     if (rstn) begin
       out <= COUNT_FROM;
     end 
