@@ -27,6 +27,7 @@ module ripple_carry_adder_tb ;
           $display("FAILED");
           #10 $finish;
         end
+        $display("%d + %d = %d",r_ADD_1,r_ADD_2,w_RESULT+COUT*(1<<WIDTH));
       end
       $display("All tests passed.");
       #10 $finish;
