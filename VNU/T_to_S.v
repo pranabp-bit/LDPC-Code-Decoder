@@ -15,7 +15,7 @@ always @* begin
   end
   else begin                             //positive
     out = in;                            //same input as output
-  end// output the same number 
+  end
 end
 
 endmodule
