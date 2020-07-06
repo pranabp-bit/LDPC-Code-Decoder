@@ -51,7 +51,7 @@ module test;
         end
       end
     end
-    $display("All tests passed.")
+    $display("All tests passed.");
     #50 $finish;
   end
     
